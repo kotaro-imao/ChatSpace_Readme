@@ -23,30 +23,31 @@ Things you may want to cover:
 
 * ...
 
-## userテーブル
-|Column｜Type|Option|
-|-------|----|------|
-|email|strings|null: fales|
-|password|strings|null: fales|
-|user|strings|null: fales|
-### Association
-- has_many :massages
+## userテーブル  
+|Column｜Type|Option|  
+|-------|----|------|  
+|email|strings|null: fales|  
 
-## groupoes_usersテーブル
-|Column｜Type|Option|
-|------|-----|------|
-|user_id|integer|null: fales, foreign_key: true|
-|groupes_id|integer|null: fales, foreign_key: true|
-### Association
-- has_many :comments
+|password|strings|null: fales|  
+|user|strings|null: fales|  
+### Association  
+- has_many :massages  
 
-## massageテーブル
-|Column｜Type|Option|
-|------|-----|------|
-|body|text|null: fales|
-|image|string|null: fales|
-|time|integer|null: fales|
-|groupe_id|integer|null: fales, foreign_key: true|
-|user_id|integer|null: fales, foreign_key: true|
-### Association
-- belongs_to :user
+## groupoes_usersテーブル  
+|Column｜Type|Option|  
+|------|-----|------|  
+|user_id|integer|null: fales, foreign_key: true|  
+|groupes_id|integer|null: fales, foreign_key: true|  
+### Association  
+- has_many :comments  
+
+## massageテーブル  
+|Column｜Type|Option|  
+|------|-----|------|  
+|body|text|null: fales|  
+|image|string|null: fales|  
+|time|integer|null: fales|  
+|groupe_id|integer|null: fales, foreign_key: true|  
+|user_id|integer|null: fales, foreign_key: true|  
+### Association  
+- belongs_to :user  
